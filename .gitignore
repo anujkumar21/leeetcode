@@ -1,6 +1,5 @@
 .gradle
 build/
-!gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
 
@@ -64,3 +63,6 @@ replay_pid*
 
 ### Mac OS ###
 .DS_Store
+
+
+!gradle/wrapper/gradle-wrapper.jar
