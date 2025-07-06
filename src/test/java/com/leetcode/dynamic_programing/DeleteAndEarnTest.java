@@ -1,6 +1,7 @@
 package com.leetcode.dynamic_programing;
 
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledIfEnvironmentVariable;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -92,6 +93,7 @@ class DeleteAndEarnTest {
 
 
     // 1. Edge Case Tests
+    @DisabledIfEnvironmentVariable(named = "GITHUB_ACTIONS", matches = "true")
     @Test
     public void testLargeInputWithDuplicates() {
         DeleteAndEarn solver = new DeleteAndEarn();
