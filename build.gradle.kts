@@ -16,6 +16,15 @@ dependencies {
 
 tasks.test {
     useJUnitPlatform()
+    reports {
+        html.required.set(true) // (Default is true, but you can set explicitly)
+        // Optionally, customize output folder:
+        // html.outputLocation.set(layout.buildDirectory.dir("my-custom-report-folder"))
+
+        junitXml.required.set(true) // (Default is true)
+        // Optionally, customize XML folder:
+        // junitXml.outputLocation.set(layout.buildDirectory.dir("my-custom-xml-folder"))
+    }
 }
 
 tasks.register<Test>("runStairClimberTest") {
